@@ -33,7 +33,7 @@ class BooksController < ApplicationController
       redirect_to book_path(@book.id)
     else
       @books = Book.all
-      flash[:alert] = "Error updating book."
+      flash[:alert] = "error updating book."
       render :edit
     end
   end

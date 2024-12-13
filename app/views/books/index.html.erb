@@ -19,11 +19,9 @@
         <td>
           <span><%= book.title %></span>
           <span><%= book.body %></span>
-          <span><%= link_to "show", "/books/#{book.id}" %></span>
-          <span><%= link_to "edit", edit_book_path(book.id) %><span>
-          <span>
-            <%= link_to "destroy", book_path(book.id), method: :delete, "data-confirm" => "Aer you sure?" %>
-          <span>
+          <span><%= link_to "Show", "/books/#{book.id}" %></span>
+          <span><%= link_to "Edit", edit_book_path(book.id) %><span>
+          <span><%= link_to "Destroy", book_path(book.id), method: :delete, "data-confirm" => "Aer you sure?" %><span>
         </td>
       </tr>
       <% end %>
