@@ -1,5 +1,14 @@
 <h1>Books</h1>
 <table>
+  <p>Title</p>
+  <% @books.each do |book| %>
+    <span><%= book.title %></span>
+  <% end %>
+
+  <p>Body</p>
+  <% @books.each do |book| %>
+    <span><%= book.body %></span>
+  <% end %>
 </table>
 
 
